@@ -9,9 +9,11 @@ public class MiaApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // Llamamos al ID creado
-        Factura factura = context.getBean("miFactura", Factura.class);
+        Documentos presupuesto = context.getBean("miDocumento", Documentos.class);
 
         // Mostramos en este caso el metodo de ejemplo creado
-        System.out.println(factura.TipoDocumento());
+        System.out.println(presupuesto.TipoDocumento());
+
+        context.close();
     }
 }
