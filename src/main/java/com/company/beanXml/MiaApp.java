@@ -13,7 +13,6 @@ public class MiaApp {
 
         // Mostramos en este caso el metodo de ejemplo creado
         System.out.println(presupuesto.TipoDocumento());
-
         context.close();
     }
 }

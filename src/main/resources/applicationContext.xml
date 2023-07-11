@@ -10,4 +10,5 @@
     <bean id="miDocumento"
           class="com.company.beanXml.Presupuesto">
     </bean>
+
 </beans>
