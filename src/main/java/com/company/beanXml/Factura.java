@@ -1,9 +1,9 @@
 package com.company.beanXml;
 
-public class Factura {
+public class Factura implements Documentos {
 
-    public String facturaMes(){
+    @Override
+    public String TipoDocumento() {
         return "Datos facturación del último mes";
     }
-
 }

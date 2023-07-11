@@ -2,7 +2,7 @@ package com.company.beanXml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class main {
+public class MiaApp {
     public static void main(String[] args){
 
         // Primero cargamos el applicationContext.xml
@@ -12,6 +12,6 @@ public class main {
         Factura factura = context.getBean("miFactura", Factura.class);
 
         // Mostramos en este caso el metodo de ejemplo creado
-        System.out.println(factura.facturaMes());
+        System.out.println(factura.TipoDocumento());
     }
 }
